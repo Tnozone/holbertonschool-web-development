@@ -31,6 +31,8 @@ body {
 
 .banner {
     background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #FFF;
 }
 
@@ -64,7 +66,79 @@ body {
     font-weight: lighter;
 }
 
-.pros h2 .learn {
+.emphasis {
     color: #C271FF;
     font-weight: bold;
+}
+
+.pros .people {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pros .people .people-container {
+    text-align: center;
+}
+
+.pros .people h3 {
+    font-size: 18px;
+}
+
+.pros .people p {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.quote {
+    background-color: #C271FF;
+    color:#FFF;
+    font-family: source-sans-pro;
+}
+
+.quote .quote-container {
+    display: flex;
+    justify-content: center;
+}
+
+.video .video-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.membership {
+    background-color: #071629;
+    align-items: center;
+    color:#FFF;
+}
+
+.membership .membership-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: #C271FF;
+    color:#FFF;
+    border: none;
+    border-radius: 16px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.faq .faq-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.faq-answer h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.faq-answer p {
+    font-size: 14px;
+}
+
+footer {
+    background-color: #071629;
 }
