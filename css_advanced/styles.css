@@ -1,7 +1,70 @@
+body {
+    margin: none;
+    padding: none;
+}
+
+@font-face {
+    font-family: "source-sans-pro";
+    src: url("fonts/source-sans-pro/");
+}
+
 .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.header-row img {
+
+}
+
+.header-row .navigation {
     color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.navigation a {
+    margin-right: 53px;
 }
 
 .banner {
     background-image: url("../images/background.png");
+    color: #FFF;
+}
+
+.banner-title {
+    text-align: center;
+    font-family: source-sans-pro;
+}
+
+.banner-title h1 {
+    font-size: 120px;
+    font-weight: bold;
+}
+
+.banner-title p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.banner-title button {
+    font-size: 14px;
+    font-weight: semibold;
+}
+
+.pros {
+
+}
+
+.pros h2 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.pros h2 .learn {
+    color: #C271FF;
+    font-weight: bold;
 }
