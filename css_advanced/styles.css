@@ -63,10 +63,6 @@ body {
     font-style: italic;
 }
 
-.semibold {
-    font-weight: 600;
-}
-
 .header {
     background: none;
 }
@@ -74,10 +70,8 @@ body {
 .header-row {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
-    margin-left: 172px;
-    margin-right: 172px;
-    padding-top: 35px;
+    align-items: center;
+    padding: 20px 50px;
 }
 
 .header-row .navigation a {
@@ -85,10 +79,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 12px;
-}
-
-.navigation a {
-    margin-right: 53px;
+    margin: 0 30px;
 }
 
 .banner {
@@ -97,33 +88,29 @@ body {
 
 .banner-title {
     text-align: center;
-    height: 245px;
+    margin: 60px 0;
 }
 
 .banner-title h1 {
     font-size: 120px;
     font-weight: bold;
-    padding-top: 120px;
 }
 
 .banner-title p {
     font-size: 16px;
     font-weight: bold;
-}
-
-.banner-title button {
-    font-size: 14px;
-    font-weight: semibold;
+    word-spacing: 60px;
 }
 
 .pros {
-    padding-top: 300px;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .pros h2 {
     font-size: 32px;
-    text-align: center;
     font-weight: 300;
+    padding-top: 70px;
 }
 
 .emphasis {
@@ -134,14 +121,21 @@ body {
 .pros .people {
     display: flex;
     justify-content: space-around;
+    margin: 50px 0;
 }
 
 .pros .people .people-container {
-    text-align: center;
+    margin: 20px;
+}
+
+.people-container h3, .people-container img, .people-container p {
+    display: block;
 }
 
 .pros .people h3 {
     font-size: 18px;
+    margin: 0.45rem 0;
+    font-weight: 900;
 }
 
 .pros .people p {
@@ -152,32 +146,28 @@ body {
 .quote {
     background-color: #C271FF;
     color:#FFF;
-    height: 392px;
+    font-size: 22px;
     display: flex;
-    justify-content: center; /* Center horizontally */
+    justify-content: space-evenly;
     align-items: center;
+    padding: 105px 0;
 }
 
 .quote .quote-container {
     display: flex;
     align-items: center;
-    width: 943px;
 }
 
-.quote-text {
-    font-size: 22px;
-    flex: 1;
-}
-
-.quote-statement {
-    margin-left: 60px;
+blockquote {
+    margin-top: 10px;
+    width: 730px;
 }
 
 .author, .profession {
-    margin-left: 60px;
+    margin-left: 40px;
 }
 
-.quote-text .author {
+.author {
     font-weight: bold;
 }
 
@@ -186,34 +176,47 @@ body {
 }
 
 .video {
-    height: 450px;
-    width: 1228px;
+    padding-bottom: 30px;
     align-items: center;
     margin: auto;
+    text-align: center;
 }
 
 .video h1 {
-    text-align: center;
     font-weight: 300;
     font-size: 32px;
+    margin: 80px 0;
 }
 
 .video .video-container {
     display: flex;
     justify-content: space-around;
+    text-align: left;
+}
+
+.review {
+    max-width: 255px;
+}
+
+.review h2, .review p, .reviewer, .review-rating {
+    padding: 0 10px;
 }
 
 .review h2 {
     font-size: 16px;
+    margin: 15px 0;
 }
 
-.review p, .review h3 {
+.review p {
+    margin-bottom: 15px;
     font-size: 14px;
 }
 
 .reviewer {
     display: flex;
     justify-content: start;
+    align-items: center;
+    font-weight: 600;
 }
 
 .reviewer img {
@@ -221,9 +224,20 @@ body {
     width: auto;
 }
 
+.reviewer h3 {
+    font-size: 14px;
+    margin-left: 15px;
+}
+
 .review-rating {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.stars img {
+    margin: 0 3px;
 }
 
 .review .reviewer h3, .review .review-rating p {
@@ -237,27 +251,28 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .membership h1 {
-    text-align: center;
     font-weight: 300;
     font-size: 32px;
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 .membership .membership-container {
     display: flex;
     justify-content: space-around;
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 .member {
-    width: 257px;
+    width: 212px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    margin: 0 40px;
+    padding-bottom: 40px;
 }
 
 .member h2 {
@@ -272,24 +287,27 @@ button {
     background-color: #C271FF;
     color:#FFF;
     border: none;
-    border-radius: 16px;
+    border-radius: 25px;
     padding: 10px 20px;
+    margin: 20px;
     display: inline-block;
+    font-size: 12px;
     font-weight: 600;
     filter: drop-shadow(0 0 0.4rem black);
+    height: 50px;
+    width: 170px;
 }
 
 .faq {
-    height: 707px;
-    width: 920px;
     align-items: center;
-    margin: auto;
+    margin: 0 0 20px 0;
 }
 
 .faq h1 {
     font-weight: 300;
     font-size: 60px;
     text-align: center;
+    margin: 60px 0;
 }
 
 .faq .faq-container {
@@ -298,35 +316,44 @@ button {
 }
 
 .faq-answer {
-    width: 350px;
+    max-width: 350px;
+    margin-bottom: 60px;
 }
 
 .faq-answer h2 {
     font-size: 16px;
     font-weight: bold;
+    margin: 20px 0 30px 0;
 }
 
 .faq-answer p {
     font-size: 14px;
-    opacity: 0.5;
+    opacity: 0.4;
+    line-height: 1.7;
 }
 
 footer {
     background-color: #071629;
-    height: 249px;
 }
 
 .footer-row {
     display: flex;
-    justify-content: space-between;
-    margin-left: 165px;
-    margin-right: 165px;
-    padding-top: 95px;
+    justify-content: space-around;
+    padding: 70px 0;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media a {
+    margin: 0 10px;
 }
 
 footer p {
     font-size: 12px;
-    opacity: 0.5;
+    opacity: 0.3;
     color: #FFF;
     text-align: center;
+    padding-bottom: 40px;
 }
